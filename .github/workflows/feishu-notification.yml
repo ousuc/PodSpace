@@ -39,6 +39,7 @@ jobs:
             DESC_RAW="${{ github.event.issue.body }}"
           elif [[ "${{ github.event_name }}" == "push" ]]; then
             COMMIT_MSG="${{ github.event.head_commit.message }}"
+            COMMIT_MSG="${COMMIT_MSG//$'\r'/}"
             # 提取第一行作为提交标题
             TITLE_TEXT=$(echo "$COMMIT_MSG" | head -n 1)
             # 提取剩余部分作为描述，去除开头空行
@@ -47,6 +48,8 @@ jobs:
             TITLE_TEXT="创建新分支"
             DESC_RAW=""
           fi
+
+          DESC_RAW="${DESC_RAW//$'\r'/}"
 
           # 转义描述文本，适配JSON字符串格式（换行、引号自动转义）
           DESC_TEXT=$(echo "$DESC_RAW" | sed 's/\\/\\\\/g; s/"/\\"/g; s/$/\\n/' | tr -d '\n' | sed 's/\\n$//')

@@ -4,7 +4,7 @@
   <img alt="C++" src="https://img.shields.io/badge/C++-17-00599C?style=for-the-badge&logo=cplusplus&logoColor=white">
   <img alt="QML" src="https://img.shields.io/badge/QML-UI-2D3436?style=for-the-badge&logo=qt&logoColor=white">
   <img alt="Platform" src="https://img.shields.io/badge/Platform-Windows_%7C_Linux-0078D6?style=for-the-badge&logo=linux&logoColor=white">
-  <img alt="Version" src="https://img.shields.io/badge/Version-1.0.1-blue?style=for-the-badge">
+  <img alt="Version" src="https://img.shields.io/badge/Version-0.0.1-blue?style=for-the-badge">
 </p>
 
 

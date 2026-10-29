@@ -1,6 +1,6 @@
 # PodSpace
 <div align="center">
-  <img src="./assets/brand/Podspace.png" alt="Pod logo" width="200">
+  <img src="./assets/brand/PodSpace.png" alt="Pod logo" width="200">
 </div>
 <p align="center">
   <img alt="Qt6" src="https://img.shields.io/badge/Qt-6.11.2-41CD52?style=for-the-badge&logo=qt&logoColor=white">
